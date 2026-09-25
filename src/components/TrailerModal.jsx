@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import gsap from 'gsap';
 import { X, ArrowRight } from 'lucide-react';
 import PrimaryButton from './PrimaryButton';
@@ -34,7 +35,7 @@ const TrailerModal = ({ movie, onClose, onSelect }) => {
       .to(overlayRef.current, { opacity: 0, duration: 0.2 }, "-=0.1");
   };
 
-  return (
+  return createPortal((
     <div 
       ref={overlayRef} 
       className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-2 sm:p-4 bg-background/80 backdrop-blur-xl opacity-0"
@@ -87,7 +88,7 @@ const TrailerModal = ({ movie, onClose, onSelect }) => {
         </div>
       </div>
     </div>
-  );
+  ), document.body);
 };
 
 export default TrailerModal;
