@@ -20,7 +20,7 @@ export const movies = [
     genre: ["Animation"],
     certification: "U",
     mood: ["Fun", "Feel-good"],
-    posterUrl: localPoster("hanuman.jpg"),
+    posterUrl: hostedPoster("hanuman-ansh-alt.jpg"),
     trailerUrl: "https://www.youtube.com/embed/YpGhCA2X3gU",
     description: "A grieving boy finds faith and purpose in a story inspired by the life of Neem Karoli Baba."
   },
@@ -81,14 +81,14 @@ export const movies = [
   },
   {
     id: "m8",
-    title: "The Odyssey",
+    title: "Heart of the Beast",
     language: "English",
-    genre: ["Adventure", "Fantasy", "Action"],
-    certification: "R",
-    mood: ["Action", "Interesting"],
-    posterUrl: hostedPoster("the-odyssey.jpg"),
-    trailerUrl: "https://www.youtube.com/embed/f_bKjZeJBBI",
-    description: "Odysseus faces a mythic journey home in Christopher Nolan’s epic retelling of Homer."
+    genre: ["Adventure", "Thriller"],
+    certification: "NR",
+    mood: ["Action", "Interesting", "Thriller"],
+    posterUrl: hostedPoster("heart-of-the-beast.jpg"),
+    trailerUrl: "https://www.youtube.com/embed/JFQcDFhNh4o",
+    description: "After a plane crash in Alaska, a Special Forces officer and his combat dog fight their way through the wilderness."
   },
   {
     id: "m9",
