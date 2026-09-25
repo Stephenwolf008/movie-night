@@ -1,3 +1,5 @@
+const localPoster = (file) => `${import.meta.env.BASE_URL}${file}`;
+
 export const movies = [
   {
     id: "m1",
@@ -6,7 +8,7 @@ export const movies = [
     genre: ["Adventure", "Fantasy"],
     certification: "UA",
     mood: ["Action", "Interesting"],
-    posterUrl: "/vvaan.jpg",
+    posterUrl: localPoster("vvaan.jpg"),
     trailerUrl: "https://www.youtube.com/embed/ed6E9UFv7jQ",
     description: "A mysterious adventure where heroes must traverse an ancient, glowing forest to save their world."
   },
@@ -17,7 +19,7 @@ export const movies = [
     genre: ["Animation"],
     certification: "U",
     mood: ["Fun", "Feel-good"],
-    posterUrl: "/hanuman.jpg",
+    posterUrl: localPoster("hanuman.jpg"),
     trailerUrl: "https://www.youtube.com/embed/YpGhCA2X3gU",
     description: "A grieving boy finds faith and purpose in a story inspired by the life of Neem Karoli Baba."
   },
@@ -28,7 +30,7 @@ export const movies = [
     genre: ["Adventure", "Thriller"],
     certification: "UA",
     mood: ["Thriller", "Interesting"],
-    posterUrl: "/island.jpg",
+    posterUrl: localPoster("island.jpg"),
     trailerUrl: "https://www.youtube.com/embed/lprJpWgAWSs",
     description: "Two lifelong friends reunite for an adventure rooted in Filipino folklore."
   },
@@ -50,7 +52,7 @@ export const movies = [
     genre: ["Horror", "Action", "Thriller"],
     certification: "R",
     mood: ["Thriller", "Action"],
-    posterUrl: "https://pics.filmaffinity.com/Resident_Evil-690895470-large.jpg",
+    posterUrl: "https://www.upcominghorrormovies.com/sites/default/files/residentevilposter_1.jpg",
     trailerUrl: "https://www.youtube.com/embed/mNd1gb19A-c",
     description: "A medical courier’s last delivery turns into a desperate fight to survive one horrifying night."
   },

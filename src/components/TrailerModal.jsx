@@ -50,7 +50,10 @@ const TrailerModal = ({ movie, onClose, onSelect }) => {
       >
         <div className="sticky top-0 flex shrink-0 items-center justify-between p-3 sm:p-4 border-b border-white/5 bg-surface/95 backdrop-blur-md z-10">
           <div className="flex items-center gap-3">
-            <span className="text-xs font-medium tracking-widest text-accent uppercase">Official Trailer</span>
+            <div>
+              <span className="text-xs font-medium tracking-widest text-accent uppercase">Official Trailer</span>
+              <span className="block text-[11px] text-secondary/70 mt-1">Tap ▶ in the video to play</span>
+            </div>
           </div>
           <button 
             onClick={handleClose}
@@ -67,6 +70,7 @@ const TrailerModal = ({ movie, onClose, onSelect }) => {
             title={`${movie.title} Trailer`}
             className="w-full h-full border-0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
         </div>
