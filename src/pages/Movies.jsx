@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { usePlan } from '../hooks/usePlan';
-import { HER_NAME } from '../config/personalization';
+
 import { movies } from '../data/movies';
 import MovieCard from '../components/MovieCard';
 import MoodFilter from '../components/MoodFilter';
@@ -69,7 +69,7 @@ const Movies = () => {
     <>
       <div ref={containerRef} className="flex-1 flex flex-col pt-8 pb-4">
         <div className="mb-6">
-          <h2 ref={titleRef} className="text-3xl font-serif text-primary opacity-0 mb-2">Okay, {HER_NAME}...</h2>
+          <h2 ref={titleRef} className="text-3xl font-serif text-primary opacity-0 mb-2">Okay, Vanshita...</h2>
           <p ref={subtitleRef} className="text-secondary opacity-0">Which one are we watching?</p>
         </div>
 

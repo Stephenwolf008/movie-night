@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { usePlan } from '../hooks/usePlan';
-import { HER_NAME } from '../config/personalization';
+
 import PrimaryButton from '../components/PrimaryButton';
 import { submitChoice } from '../services/submitChoice';
 
@@ -55,7 +55,7 @@ const Confirmation = () => {
         ref={el => elementsRef.current[0] = el} 
         className="opacity-0 mb-8"
       >
-        <h2 className="text-3xl font-serif text-primary">Good choice, {HER_NAME}. ✨</h2>
+        <h2 className="text-3xl font-serif text-primary">Good choice, Vanshita. ✨</h2>
       </div>
 
       <div 

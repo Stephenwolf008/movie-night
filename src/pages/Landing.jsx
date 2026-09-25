@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ArrowRight } from 'lucide-react';
 import { usePlan } from '../hooks/usePlan';
 import PrimaryButton from '../components/PrimaryButton';
-import { HER_NAME } from '../config/personalization';
+
 
 const Landing = () => {
   const { setStep } = usePlan();
@@ -51,7 +51,7 @@ const Landing = () => {
     <div ref={containerRef} className="flex-1 flex flex-col items-center justify-center text-center">
       <div className="flex-1 flex flex-col justify-center max-w-sm w-full">
         <h1 ref={text1Ref} className="text-4xl md:text-5xl font-serif text-primary mb-6 opacity-0">
-          Hey, {HER_NAME} 👋
+          Hey, Vanshita 👋
         </h1>
         
         <p ref={text2Ref} className="text-secondary text-lg mb-8 opacity-0">

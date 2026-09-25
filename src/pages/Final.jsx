@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { RefreshCcw } from 'lucide-react';
 import { usePlan } from '../hooks/usePlan';
-import { HER_NAME } from '../config/personalization';
+
 
 const Final = () => {
   const { plan, setStep } = usePlan();
@@ -46,7 +46,7 @@ const Final = () => {
         ref={el => elementsRef.current[2] = el}
         className="opacity-0 mb-16"
       >
-        <p className="text-lg text-primary italic">See you soon, {HER_NAME}. :)</p>
+        <p className="text-lg text-primary italic">See you soon, Vanshita. :)</p>
       </div>
 
       <button 
